@@ -10,6 +10,7 @@
 #' @author
 #' Alessandro Samuel-Rosa \email{alessandrosamuelrosa@@gmail.com}
 #' @aliases setGitProxy getGitProxy rmGitProxy
+#' @rdname git
 #' @export
 # SET HTTP.PROXY ###############################################################
 setGitProxy <-
