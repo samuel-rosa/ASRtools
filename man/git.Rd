@@ -2,15 +2,21 @@
 % Please edit documentation in R/git.R
 \name{setGitProxy}
 \alias{getGitProxy}
+\alias{gitPull}
+\alias{gitStatus}
 \alias{rmGitProxy}
 \alias{setGitProxy}
-\title{git settings}
+\title{git tools}
 \usage{
 setGitProxy(proxy, port, auto = "ufrrj")
 
 getGitProxy()
 
 rmGitProxy()
+
+gitStatus()
+
+gitPull()
 }
 \arguments{
 \item{proxy}{Proxy address without the \code{"http://"}.}
@@ -20,7 +26,7 @@ rmGitProxy()
 \item{auto}{Use a default http.proxy.}
 }
 \description{
-Tools to configure git.
+Tools to make the use of git easier.
 }
 \author{
 Alessandro Samuel-Rosa \email{alessandrosamuelrosa@gmail.com}

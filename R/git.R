@@ -1,6 +1,6 @@
-#' git settings
+#' git tools
 #' 
-#' Tools to configure git.
+#' Tools to make the use of git easier.
 #' 
 #' @param proxy Proxy address without the \code{"http://"}.
 #' 
@@ -9,7 +9,7 @@
 #' @param auto Use a default http.proxy.
 #' @author
 #' Alessandro Samuel-Rosa \email{alessandrosamuelrosa@@gmail.com}
-#' @aliases setGitProxy getGitProxy rmGitProxy
+#' @aliases setGitProxy getGitProxy rmGitProxy gitStatus
 #' @rdname git
 #' @export
 # SET HTTP.PROXY ###############################################################
@@ -35,4 +35,18 @@ getGitProxy <-
 rmGitProxy <-
   function () {
     system("git config --unset --global http.proxy")
+  }
+# GIT STATUS ###################################################################
+#' @rdname git
+#' @export
+gitStatus <-
+  function () {
+    system("git status")
+  }
+# GIT PULL #####################################################################
+#' @rdname git
+#' @export
+gitPull <-
+  function () {
+    system("git pull")
   }
