@@ -1,8 +1,8 @@
 Package: ASRtools
 Type: Package
 Title: Tools to make my life easier
-Version: 0.1.1
-Date: 2015-01-13
+Version: 0.2.0
+Date: 2020-02-08
 Author: Alessandro Samuel-Rosa
 Maintainer: Alessandro Samuel Rosa <alessandrosamuelrosa@gmail.com>
 Description: This is a collection of tools developed for my personal use with
@@ -10,3 +10,8 @@ Description: This is a collection of tools developed for my personal use with
 License: GPL (>= 2)
 Depends: R (>= 1.8.0)
 Encoding: UTF-8
+RoxygenNote: 7.0.2
+Suggests:
+    sp,
+    spsurvey,
+    xtable
